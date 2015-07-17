@@ -10,6 +10,6 @@ export GOPATH=~/.go
 #alias vim='nvim'
 alias tig='tig --all'
 
-# install oh-my-zsh by antigen
+# install antigen
 source "$HOME/.antigen/antigen.zsh"
 antigen-apply
