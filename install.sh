@@ -8,5 +8,13 @@ else
     git pull
 fi
 
+ANTIGEN=~/.antigen
+if [ ! -d "$ANTIGEN" ]; then 
+    git clone git@github.com:WitzHsiao/env.git "$ANTIGEN"
+else
+    cd "$ANTIGEN"
+    git pull
+fi
+
 ln -s $ENVHOME/my-bashrc ~/.my-bashrc
 sh $ENVHOME/install_zsh.sh

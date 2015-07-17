@@ -1,8 +1,20 @@
+# rbenv for zsh
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
+
 
 export PATH=~/Library/Android/sdk/platform-tools/:$PATH
 export PATH=~/.go/bin:$PATH
 export GOPATH=~/.go
 
+# aliases
 #alias vim='nvim'
 alias tig='tig --all'
+
+# install oh-my-zsh by antigen
+source "$HOME/.antigen/antigen.zsh"
+
+antigen-use oh-my-zsh
+antigen-bundle arialdomartini/oh-my-git
+antigen theme arialdomartini/oh-my-git-themes oppa-lana-style
+
+antigen-apply
