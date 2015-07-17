@@ -1,0 +1,8 @@
+if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
+
+export PATH=~/Library/Android/sdk/platform-tools/:$PATH
+export PATH=~/.go/bin:$PATH
+export GOPATH=~/.go
+
+#alias vim='nvim'
+alias tig='tig --all'
