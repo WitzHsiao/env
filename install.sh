@@ -10,7 +10,7 @@ fi
 
 ANTIGEN=~/.antigen
 if [ ! -d "$ANTIGEN" ]; then 
-    git clone git@github.com:WitzHsiao/env.git "$ANTIGEN"
+    git clone https://github.com/zsh-users/antigen.git "$ANTIGEN"
 else
     cd "$ANTIGEN"
     git pull
