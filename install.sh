@@ -8,5 +8,5 @@ else
     git pull
 fi
 
-ln -s ~/.my-bashrc $ENVHOME/my-bashrc
+ln -s $ENVHOME/my-bashrc ~/.my-bashrc
 sh $ENVHOME/install_zsh.sh
