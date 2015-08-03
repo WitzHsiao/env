@@ -9,7 +9,13 @@ export GOPATH=~/.go
 # aliases
 #alias vim='nvim'
 alias tig='tig --all'
+alias vimgist='vim "+Gist -la"'
 
 # install antigen
 source "$HOME/.antigen/antigen.zsh"
 antigen-apply
+
+# oh-my-git
+antigen-use oh-my-zsh
+antigen-bundle arialdomartini/oh-my-git
+antigen theme arialdomartini/oh-my-git-themes oppa-lana-style
