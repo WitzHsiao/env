@@ -19,6 +19,8 @@ brew 'tree'
 brew 'wget'
 brew 'xz'
 brew 'imagemagick'
+brew 'dex2jar'
+brew 'apktool'
 
 cask 'go2shell'
 cask 'alfred'
@@ -39,6 +41,7 @@ cask 'wireshark'
 cask 'intellij-idea-ce'
 cask 'sequel-pro'
 cask 'spotify'
+cask 'jd-gui'
 
 # sindresorhus/quick-look-plugins
 cask 'qlcolorcode'
