@@ -1,0 +1,9 @@
+export QT_ROOT=~/Qt/5.5/
+
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH=~/Library/Android/sdk/tools:$PATH
+export PATH=~/Library/Android/sdk/platform-tools:$PATH
+export PATH=~/.go/bin:$PATH
+export GOPATH=~/.go
+

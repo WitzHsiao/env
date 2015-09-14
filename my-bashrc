@@ -1,15 +1,13 @@
 # rbenv for zsh
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
-
-export PATH=~/Library/Android/sdk/platform-tools/:$PATH
-export PATH=~/.go/bin:$PATH
-export GOPATH=~/.go
+source "$HOME/.bashrc.local"
 
 # aliases
 #alias vim='nvim'
 alias tig='tig --all'
-alias vimgist='vim "+Gist -la"'
+alias vimgist='vim "+Gist -l WitzHsiao"'
+alias simpleserver='python -m SimpleHTTPServer '
 
 # install antigen
 source "$HOME/.antigen/antigen.zsh"
@@ -50,3 +48,14 @@ function zle-line-finish
 zle -N zle-line-init
 zle -N zle-line-finish
 zle -N zle-keymap-select
+
+#function svn_info {
+#if [[ -d "${PWD}/.svn" ]]; then
+    #info=$(svn info 2> /dev/null | grep URL | grep -Eo 'https:.*$')
+    #echo "(svn: ${info})"
+#fi
+#}
+#omg_ungit_prompt+="
+#[$(svn_info)]"
+#RPROMPT="$(svn_info)"
+
